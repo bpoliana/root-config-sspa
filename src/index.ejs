@@ -29,7 +29,10 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.5.0/lib/system/single-spa.min.js"
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.5.0/lib/system/single-spa.min.js",
+        "@tw/single-spa-poc": "http://localhost:8080/tw-single-spa-poc.js",
+        "react": "https://cdn.jsdelivr.net/npm/react@16.13.0/umd/react.production.min.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.0/umd/react-dom.production.min.js"
       }
     }
   </script>
@@ -42,7 +45,11 @@
     <script type="systemjs-importmap">
       {
         "imports": {
-          "@tw/root-config": "//localhost:9000/tw-root-config.js"
+          "@tw/root-config": "//localhost:9000/tw-root-config.js",
+          "@tw/single-spa-poc": "http://localhost:8080/tw-single-spa-poc.js",
+          "@tw/poc-sspa": "http://localhost:8081/tw-poc-sspa.js",
+          "react": "https://cdn.jsdelivr.net/npm/react@16.13.0/umd/react.production.min.js",
+          "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.0/umd/react-dom.production.min.js"
         }
       }
     </script>
