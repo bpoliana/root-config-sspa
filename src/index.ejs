@@ -29,8 +29,8 @@
   <script type="systemjs-importmap">
     {
       "imports": {
+        "@tw/root-config": "//localhost:9000/tw-root-config.js",
         "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.5.0/lib/system/single-spa.min.js",
-        "@tw/single-spa-poc": "http://localhost:8080/tw-single-spa-poc.js",
         "react": "https://cdn.jsdelivr.net/npm/react@16.13.0/umd/react.production.min.js",
         "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.0/umd/react-dom.production.min.js"
       }
@@ -66,6 +66,13 @@
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.3.1/dist/system.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.3.1/dist/extras/amd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.3.1/dist/extras/named-exports.js"></script>
+
+  <template id="single-spa-layout">
+      <div>
+        <application name="@tw/single-spa-poc"></application>
+        <application name="@tw/poc-sspa"></application>
+      </div>
+  </template>
   <% } else { %>
   <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@1.14.6/dist/import-map-overrides.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.3.1/dist/system.min.js"></script>
